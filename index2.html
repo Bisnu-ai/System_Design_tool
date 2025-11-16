@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Design Diagram Tool</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="container">
+    <h2> System Design Diagram Tool</h2>
+
+    <div id="controls">
+        <textarea id="instructions" rows="4" placeholder="Enter system design instructions..."></textarea>
+        <button onclick="generateDiagram()">Generate Diagram</button>
+
+        <input id="newBoxText" type="text" placeholder="Enter box text">
+        <button onclick="addNewBox()">Add New Box</button>
+        <button onclick="toggleConnectionMode()">Toggle Connection Mode</button>
+    </div>
+
+    <canvas id="diagramCanvas" width="900" height="600"></canvas>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
